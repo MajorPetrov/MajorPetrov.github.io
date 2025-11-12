@@ -1,61 +1,67 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blanter Soft — Éditeur d’applications mobiles</title>
+  <link rel="icon" href="favicon.png">
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; background: #fafafa; color: #222; }
+    header, section, footer { max-width: 800px; margin: auto; padding: 2rem; text-align: center; }
+    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    header p { color: #666; }
+    .apps { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; margin-top: 2rem; }
+    .app { background: white; border-radius: 16px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 1.5rem; width: 240px; }
+    .app img { width: 80px; height: 80px; border-radius: 16px; }
+    .app h3 { margin: 1rem 0 0.5rem; }
+    .links a { display: inline-block; margin: 0.3rem; text-decoration: none; color: white; padding: 0.4rem 1rem; border-radius: 8px; }
+    footer { font-size: 0.9rem; color: #777; border-top: 1px solid #ddd; margin-top: 3rem; padding-top: 1rem; }
+    footer a { color: #30a490; text-decoration: none; }
+  </style>
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <img src="img/soldier.png" class="rounded float-left" alt="" height="42" width="42">
-        <a class="navbar-brand" href="#">Major Petrov's personal home page</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+  <header>
+    <h1><img src="image-2025-11-12-103305"></h1>
+    <p>Nous concevons des applications mobiles pensées pour une expérience simple, fluide et agréable — sans compromis.</p>
+  </header>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Resume</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Projects
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+  <section id="apps">
+    <h2>Nos applications</h2>
+    <div class="apps">
+      <div class="app">
+        <img src="images/app1-icon.png" alt="Icône de App1">
+        <h3>Auto Chill</h3>
+        <p>Le covoiturage sur-mesure et surtout pas cher</p>
+        <div class="links">
+          <a href="https://play.google.com/store/apps/details?id=..." target="_blank"><img src="GetItOnGooglePlay_Badge_Web_color_French.svg"></a>
+          <a href="https://apps.apple.com/app/id..." target="_blank"><img src="Download_on_the_App_Store_Badge_FR_RGB_blk_100517.svg"></a>
         </div>
-    </nav>
+      </div>
 
+      <div class="app">
+        <img src="images/app2-icon.png" alt="Icône de App2">
+        <h3>Parkway</h3>
+        <p>Finit de touner en rond : trouvez une place de parking facilement</p>
+        <div class="links">
+          <a href="https://play.google.com/store/apps/details?id=..." target="_blank"><img src="GetItOnGooglePlay_Badge_Web_color_French.svg"></a>
+          <a href="https://play.google.com/store/apps/details?id=..." target="_blank"><img src="GetItOnGooglePlay_Badge_Web_color_French.svg"></a>
+        </div>
+      </div>
+
+      <div class="app">
+        <img src="images/app2-icon.png" alt="Icône de App2">
+        <h3>Kaidō Nav</h3>
+        <p>Optimisez vos trajets avec une navigation fluide et sans stress.</p>
+        <div class="links">
+          <a href="https://play.google.com/store/apps/details?id=..." target="_blank"><img src="GetItOnGooglePlay_Badge_Web_color_French.svg"></a>
+          <a href="https://play.google.com/store/apps/details?id=..." target="_blank"><img src="GetItOnGooglePlay_Badge_Web_color_French.svg"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Blanter Soft — <a href="/legal/privacy.html">Confidentialité</a> | <a href="/legal/legal.html">Mentions légales</a> | <a href="mailto:contact@nomdustudio.com">Contact</a>
+  </footer>
 </body>
-
 </html>
